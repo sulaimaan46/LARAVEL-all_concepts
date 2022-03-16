@@ -36,7 +36,7 @@ Route::get('/student', function () {
 
 Route::get('/studentdetails', 'StudentController@index');
 
-Route::get('/studentsdetails', 'StudentController@show');
+// Route::get('/studentsdetails', 'StudentController@show');
 Route::post('/insert_student', 'CustomerController@store');
 
 Route::get('/index', function () {

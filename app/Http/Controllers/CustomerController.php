@@ -38,6 +38,7 @@ class CustomerController extends Controller
         $enddate = new DateTime($edate);
         $interval = $startdate->diff($enddate);
         $days = $interval->format('%a');
+        
     //    dd($days);
 
         $data=$this->daycalc->where('from_day', '<=', $days)->where('to_day', '>=', $days)->first();
@@ -51,9 +52,9 @@ class CustomerController extends Controller
         }
 
 
-        $calc = $days * 1000; // 4*1000 = 3000
+        $calc = $days * 1000; // 4*1000 = 4000
         $rate = $calc - $person_disc_amount ; //3000 - 100 =2900
-        $result = $person * $personpercentage; // 2*30 = 90
+        $result = $person * $personpercentage; // 3*30 = 90
         $total = $rate + $result;//2900 +90=2990
 
         return view('form',compact('total'));

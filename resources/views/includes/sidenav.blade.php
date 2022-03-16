@@ -88,7 +88,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="index_crud.php">Database Entry</a>
+                                    <a href="#">Database Entry</a>
                                 </li>
 
                             </ul>
