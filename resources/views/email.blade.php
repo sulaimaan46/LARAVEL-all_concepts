@@ -9,7 +9,7 @@
 @section('content')
 
 <div class="container" >
-    <h2 >Email SEND</h2>
+    <h2 >Email SEND Forms</h2>
     <h3 class="notification"></h3>
     <form action={{url('/')}}/emailform class="myform"  method="post"  enctype="multipart/form-data" style="margin-top: 109px;">
         @csrf
