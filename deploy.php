@@ -30,8 +30,8 @@ task('deploy:secrets', function () {
     upload('.env', get('deploy_path') . '/shared');
 });
 
-host('laravel')
-  ->hostname('52.90.135.118')
+host('Laravel')
+  ->hostname('3.82.203.16')
   ->stage('production')
   ->user('ubuntu')
   ->set('deploy_path', '/var/www/html');
