@@ -2,7 +2,7 @@ name: Laravel-Sulai
 
 on:
   push:
-    branches: master
+    branches: main
 
 jobs:
   build-js:
@@ -29,7 +29,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@master
         with:
-          php-version: 7.4.26 # Use your PHP version
+          php-version: 7.4.3 # Use your PHP version
           extension-csv: mbstring, bcmath # Setup any required extensions for tests
       - name: Composer install
         run: composer install
@@ -52,7 +52,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@master
         with:
-          php-version: 7.4.26
+          php-version: 7.4.3
           extension-csv: mbstring, bcmath
       - name: Composer install
         run: composer install
