@@ -2,7 +2,7 @@ name: Laravel-Sulai
 
 on:
   push:
-    branches: main
+    branches: master
 
 jobs:
   build-js:
@@ -58,7 +58,7 @@ jobs:
         run: composer install
       - name: Setup Deployer
         uses: atymic/deployer-php-action@master
-        with:    
+        with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
       - name: Deploy to Prod
